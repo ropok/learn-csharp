@@ -1,31 +1,21 @@
 using System;
+using System.Collections.Generic;
 
 namespace main {
     class Program {
         static void Main(string[] args){
             
-            int i = 13;
-            
-            switch (i) {
-                default:
-                    Console.Write("No case!");
-                    break;
-                case 1:
-                    Console.WriteLine("First case!");
-                    break;
-                case 5:
-                    break;
-            }
+            // int[] intArray = new int[5];
+            int[] intArray = new int[] { 1, 2, 3, 4, 5 };
+
+            List<int> intList = new List<int>() { 1, 2, 3};
+            intList.Add(5);
+            intList.Remove(1);
+
+            Console.WriteLine(intList[0]);
+
 
             Console.ReadKey();
-        }
-
-        static void TestFunction() {
-
-        }
-
-        static bool SecondTestFunction(int i) {
-            return i < 100;
         }
     }
 }
