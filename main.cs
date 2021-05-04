@@ -10,8 +10,8 @@ namespace main {
 
             List<int> intList = new List<int>() { 1, 2, 3};
             
-            foreach (int i in intArray) {
-                Console.WriteLine(i);
+            for (int i = 0; i < intList.Count; i++) {
+                Console.WriteLine(i + " " + intList[i]);
             }
 
             Console.ReadKey();
