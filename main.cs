@@ -11,9 +11,9 @@ namespace main {
             List<int> intList = new List<int>() { 1, 2, 3};
 
             int i = 0;
-            while (i < 5) {
+            do {
                 i++;
-            }
+            } while (i < 5);
 
             Console.ReadKey();
         }
